@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Animations</title>
+  <style>
+    body {
+      width: 100vh;
+      height: 100vh;
+    }
+
+
+    .rotate-scale-up {
+
+      -webkit-animation: rotate-scale-up 2s linear infinite both;
+      animation: rotate-scale-up 2s linear infinite both;
+    }
+
+    /* @-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1) rotateZ(0) translate(0px, 150px);
+            transform: scale(1) rotateZ(0) translate(0px, 150px);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(0) translate(150px, 150px);
+            transform: scale(1) rotateZ(0) translate(150px, 150px);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(1) rotateZ(0) translate(0px, 150px);
+            transform: scale(1) rotateZ(0) translate(0px, 150px);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(0) translate(150px, 150px);
+            transform: scale(1) rotateZ(0) translate(150px, 150px);
+  }
+} */
+
+
+
+    @-webkit-keyframes rotate-scale-up {
+      0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+      }
+
+      50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+      }
+
+      100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+      }
+    }
+
+    @keyframes rotate-scale-up {
+      0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+      }
+
+      50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+      }
+
+      100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Free_logo.svg" class="rotate-scale-up">
+  </div>
+
+</body>
+
+</html>
